@@ -1,3 +1,17 @@
+body,
+div {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #F6FAFF;
+}
+
+.title {
+    font-family: 'Dancing Script', cursive;
+}
+
 .photoAndDescription {
     display: flex;
     align-items: center;
@@ -14,6 +28,60 @@
     font-family: 'Raleway', sans-serif;
     font-size: x-large;
     margin: 1%;
+    color: black;
+}
+
+.myName {
+    font-family: 'Dancing Script', cursive;
+    font-size: xx-large;
+    font-weight: bold;
+
+}
+
+.imageContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+    justify-items: center;
+}
+
+.portfolioImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 1000px) {
+    .photoAndDescription {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .profilePhoto {
+        width: 35%;
+        height: 35%;
+        margin: 1%;
+        align-items: center;
+    }
+
+    .descriptionAboutMe {
+        font-family: 'Raleway', sans-serif;
+        font-size: large;
+        margin: 1%;
+    }
+}
+
+body,
+div,
+.navbar-container,
+.headerMenu {
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar-container {
+    background: #D7C9FF;
 }
 
 @media (max-width: 768px) {
@@ -33,5 +101,22 @@
         font-family: 'Raleway', sans-serif;
         font-size: medium;
         margin: 1%;
+    }
+
+    .imageContainer {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .portfolioImage {
+        width: 300px;
+        height: 300px;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .portfolioImage {
+        width: 400px;
+        height: 400px;
     }
 }

@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { SketchOutlined, AppstoreOutlined, MailOutlined, LinkOutlined } from '@ant-design/icons';
 import { Menu } from 'antd';
 import Content from './Content';
-import '../styles/HeaderMenu.css';
+import '../styles/Content.css';
 
 function NavBar() {
 
@@ -42,9 +42,12 @@ function NavBar() {
     };
 
     return (
-        <div className='navbar-container'>
-            <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} style={{ backgroundColor: '#FFD9E2' }} />
-            {/* <Content selection={current} /> */}
+        <div className='navbar-container' style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <div style={{ textAlign: 'left', marginRight: '10px' }}>
+                <p className='myName' style={{ display: 'flex', marginLeft: '10px', alignItems: 'center', justifyContent: 'center' }}>Gina Davis</p>
+            </div>
+
+            <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} style={{ backgroundColor: '#D7C9FF' }} />
         </div>
     );
 }

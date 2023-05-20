@@ -12,7 +12,7 @@ function AboutMe() {
                     <p> I have always been interested in programming languages and began learning simple algorithms at the age of 15.
                         <br />
                         <br />
-                        In my home country of Paraguay, I took algorithm classes during high school. Later I went to college and obtained the equivalent of a Bachelor's degree in Computer Science. However, upon moving to the United States, I experienced imposter syndrome, which led me to veer away from my passion for computer programming. Instead, I embarked on a career in Logistics/Imports Compliance, where I spent 9 years.
+                        In my home country of Paraguay, I took algorithm classes during high school. Later, I went to college and obtained a Bachelor's degree in Computer Science. However, upon moving to the United States, I experienced imposter syndrome, which led me to veer away from my passion for computer programming. Instead, I embarked on a career in Logistics/Imports Compliance, where I spent 9 years.
                         <br />
                         <br />
                         During this time, I never lost sight of my true passion for programming, and in the winter of 2022, I finally took a leap of faith and enrolled in the UCF Full-stack Bootcamp.

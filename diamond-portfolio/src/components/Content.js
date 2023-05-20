@@ -7,27 +7,10 @@ import Contact from './Contact';
 import Resume from './Resume';
 
 function Content({ selection }) {
-    // let page;
     console.log('This is inside of Content')
     console.log(selection)
-    // switch (selection) {
-    //     case 'aboutMe':
-    //         page = <AboutMe />;
-    //         break;
-    //     case 'portfolio':
-    //         page = <Portfolio />;
-    //         break;
-    //     case 'contact':
-    //         page = <Contact />;
-    //         break;
-    //     case 'resume':
-    //         page = <Resume />;
-    //         break;
-    //     default:
-    //         page = null;
-    // }
 
-    return <>
+    return <div style={{ backgroundColor: '#F6FAFF' }}>
 
         <Routes>
             <Route path='/' element={<AboutMe />} />
@@ -36,7 +19,7 @@ function Content({ selection }) {
             <Route path='/resume' element={<Resume />} />
         </Routes>
 
-    </>;
+    </div>;
 }
 
 export default Content;
