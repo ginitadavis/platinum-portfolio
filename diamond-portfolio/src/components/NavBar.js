@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { SketchOutlined, AppstoreOutlined, MailOutlined, LinkOutlined } from '@ant-design/icons';
 import { Menu } from 'antd';
+import Content from './Content';
 
 function NavBar() {
     const items = [
@@ -26,7 +27,7 @@ function NavBar() {
         },
     ];
 
-    const [current, setCurrent] = useState('mail');
+    const [current, setCurrent] = useState('aboutMe');
 
     const onClick = (e) => {
         console.log('click ', e);
@@ -34,7 +35,12 @@ function NavBar() {
         console.log('click ', e.key);
     };
 
-    return (<Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} />)
+    return (
+        <>
+            <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} />
+            <Content selection={current} />
+        </>
+    );
 }
 
 export default NavBar;
