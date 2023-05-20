@@ -1,13 +1,18 @@
+import { useNavigate } from 'react-router-dom';
 import React, { useState } from 'react';
 import { SketchOutlined, AppstoreOutlined, MailOutlined, LinkOutlined } from '@ant-design/icons';
 import { Menu } from 'antd';
 import Content from './Content';
+import '../styles/HeaderMenu.css';
 
 function NavBar() {
+
+    const navigate = useNavigate();
+
     const items = [
         {
             label: 'About Me',
-            key: 'aboutMe',
+            key: '',
             icon: <SketchOutlined />,
         },
         {
@@ -32,14 +37,15 @@ function NavBar() {
     const onClick = (e) => {
         console.log('click ', e);
         setCurrent(e.key);
+        navigate('/' + e.key)
         console.log('click ', e.key);
     };
 
     return (
-        <>
-            <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} />
-            <Content selection={current} />
-        </>
+        <div className='navbar-container'>
+            <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} style={{ backgroundColor: '#FFD9E2' }} />
+            {/* <Content selection={current} /> */}
+        </div>
     );
 }
 

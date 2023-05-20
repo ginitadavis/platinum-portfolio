@@ -1,0 +1,37 @@
+.photoAndDescription {
+    display: flex;
+    align-items: center;
+    /* Align vertically in the center */
+}
+
+.profilePhoto {
+    width: 20%;
+    height: 20%;
+    margin: 1%;
+}
+
+.descriptionAboutMe {
+    font-family: 'Raleway', sans-serif;
+    font-size: x-large;
+    margin: 1%;
+}
+
+@media (max-width: 768px) {
+    .photoAndDescription {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .profilePhoto {
+        width: 50%;
+        height: 50%;
+        margin: 1%;
+        align-items: center;
+    }
+
+    .descriptionAboutMe {
+        font-family: 'Raleway', sans-serif;
+        font-size: medium;
+        margin: 1%;
+    }
+}
