@@ -79,9 +79,21 @@ div,
     padding: 0;
 }
 
-
 .navbar-container {
     background: #D7C9FF;
+}
+
+.resumeInformation {
+    font-family: 'Ysabeau', sans-serif;
+}
+
+.marginForm {
+    margin: 10px;
+}
+
+.contactForm {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media (max-width: 768px) {

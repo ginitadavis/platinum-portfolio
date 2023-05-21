@@ -16,7 +16,7 @@ function Resume() {
                 >
                     Download my Resume
                 </a>
-                <h2 className='subTitle'>front-end Proficiencies</h2>
+                <h2 className='subTitle'>Front-end Proficiencies</h2>
                 <ul>
                     <li>HTML</li>
                     <li>CSS</li>
@@ -26,7 +26,7 @@ function Resume() {
                     <li>React</li>
                     <li>Bootstrap</li>
                 </ul>
-                <h2 className='subTitle'>back-end Proficiencies</h2>
+                <h2 className='subTitle'>Back-end Proficiencies</h2>
                 <ul>
                     <li>APIs</li>
                     <li>Node</li>
