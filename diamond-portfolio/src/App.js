@@ -3,6 +3,7 @@ import './App.css';
 import React, { useState } from 'react';
 import HeaderMenu from './components/HeaderMenu';
 import Content from './components/Content';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -10,8 +11,12 @@ function App() {
 
     <Router>
       <div className="App">
-        <HeaderMenu />
-        <Content />
+        <div className="headerAndContent">
+          <HeaderMenu />
+          <Content />
+        </div>
+
+        <Footer />
       </div>
     </Router>
   );

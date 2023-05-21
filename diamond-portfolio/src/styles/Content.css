@@ -15,7 +15,6 @@ body {
 .photoAndDescription {
     display: flex;
     align-items: center;
-    /* Align vertically in the center */
 }
 
 .profilePhoto {
@@ -49,26 +48,6 @@ body {
     object-fit: cover;
 }
 
-@media (max-width: 1000px) {
-    .photoAndDescription {
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .profilePhoto {
-        width: 35%;
-        height: 35%;
-        margin: 1%;
-        align-items: center;
-    }
-
-    .descriptionAboutMe {
-        font-family: 'Raleway', sans-serif;
-        font-size: large;
-        margin: 1%;
-    }
-}
-
 body,
 div,
 .navbar-container,
@@ -92,6 +71,31 @@ div,
 .contactForm {
     margin-left: auto;
     margin-right: auto;
+}
+
+footer {
+    background: #D7C9FF;
+    /* margin-top: auto; */
+}
+
+@media (max-width: 1000px) {
+    .photoAndDescription {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .profilePhoto {
+        width: 35%;
+        height: 35%;
+        margin: 1%;
+        align-items: center;
+    }
+
+    .descriptionAboutMe {
+        font-family: 'Raleway', sans-serif;
+        font-size: large;
+        margin: 1%;
+    }
 }
 
 @media (max-width: 768px) {

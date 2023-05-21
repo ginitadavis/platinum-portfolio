@@ -10,16 +10,20 @@ function Content({ selection }) {
     console.log('This is inside of Content')
     console.log(selection)
 
-    return <div style={{ backgroundColor: '#F6FAFF' }}>
+    return (
+        <>
+            <div style={{ backgroundColor: '#F6FAFF' }}>
+                <Routes>
+                    <Route path='/' element={<AboutMe />} />
+                    <Route path='/portfolio' element={<Portfolio />} />
+                    <Route path='/contact' element={<Contact />} />
+                    <Route path='/resume' element={<Resume />} />
+                </Routes>
 
-        <Routes>
-            <Route path='/' element={<AboutMe />} />
-            <Route path='/portfolio' element={<Portfolio />} />
-            <Route path='/contact' element={<Contact />} />
-            <Route path='/resume' element={<Resume />} />
-        </Routes>
-
-    </div>;
+            </div>
+            {/* <footer>This is the footer</footer> */}
+        </>
+    );
 }
 
 export default Content;

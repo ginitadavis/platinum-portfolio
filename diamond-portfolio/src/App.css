@@ -1,5 +1,13 @@
 .App {
   text-align: center;
+  min-height: 100vh;
+  /* Set the container to at least the full height of the viewport */
+  display: flex;
+  flex-direction: column;
+}
+
+.headerAndContent {
+  flex: 1;
 }
 
 .App-logo {
@@ -32,6 +40,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
