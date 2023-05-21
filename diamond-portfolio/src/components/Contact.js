@@ -1,32 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../styles/Content.css';
+import { Button, Form, Input, message } from 'antd';
 
-
-import { PlusOutlined } from '@ant-design/icons';
-import {
-    Button,
-    Form,
-    Input,
-} from 'antd';
-import { useState } from 'react';
 const { TextArea } = Input;
 
 function Contact() {
+    const [isSubmitted, setIsSubmitted] = useState(false);
+    const [form] = Form.useForm();
+
     const onFinish = (values) => {
         console.log('Success:', values);
+        setIsSubmitted(true);
+        message.success('Message submitted successfully');
+        form.resetFields();
     };
+
     const onFinishFailed = (errorInfo) => {
         console.log('Failed:', errorInfo);
     };
-
-
 
     return (
         <>
             <h1 className='title'>Contact</h1>
 
             <Form
-                name="basic"
+                form={form}
+                name='basic'
                 labelCol={{
                     span: 8,
                 }}
@@ -36,14 +35,13 @@ function Contact() {
                 style={{
                     maxWidth: 600,
                 }}
-
                 onFinish={onFinish}
                 onFinishFailed={onFinishFailed}
-                autoComplete="off"
+                autoComplete='off'
             >
                 <Form.Item
-                    label="Name"
-                    name="userName"
+                    label='Name'
+                    name='userName'
                     rules={[
                         {
                             required: true,
@@ -55,12 +53,16 @@ function Contact() {
                 </Form.Item>
 
                 <Form.Item
-                    label="Email Address"
-                    name="email"
+                    label='Email Address'
+                    name='email'
                     rules={[
                         {
                             required: true,
                             message: 'Please input your email address.',
+                        },
+                        {
+                            type: 'email',
+                            message: 'Please enter a valid email address.',
                         },
                     ]}
                 >
@@ -68,8 +70,8 @@ function Contact() {
                 </Form.Item>
 
                 <Form.Item
-                    label="Message:"
-                    name="message"
+                    label='Message:'
+                    name='message'
                     rules={[
                         {
                             required: true,
@@ -78,7 +80,6 @@ function Contact() {
                     ]}
                 >
                     <TextArea rows={4} />
-
                 </Form.Item>
 
                 <Form.Item
@@ -87,15 +88,15 @@ function Contact() {
                         span: 16,
                     }}
                 >
-                    <Button type="primary" htmlType="submit">
+                    <Button type='primary' htmlType='submit'>
                         Submit
                     </Button>
                 </Form.Item>
             </Form>
 
-
+            {isSubmitted}
         </>
-    )
+    );
 }
 
 export default Contact;
