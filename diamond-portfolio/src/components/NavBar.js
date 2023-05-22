@@ -12,7 +12,7 @@ function NavBar() {
     const items = [
         {
             label: 'About Me',
-            key: '',
+            key: 'homepage',
             icon: <SketchOutlined />,
         },
         {
