@@ -56,8 +56,9 @@ div,
     padding: 0;
 }
 
-.navbar-container {
-    /* background: #D7C9FF !important; */
+.cardTitle {
+    font-family: 'Dancing Script', cursive;
+    font-size: large;
 }
 
 

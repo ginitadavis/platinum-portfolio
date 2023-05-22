@@ -25,7 +25,9 @@ function Portfolio() {
             <div className='imageContainer' style={{ display: 'flex', alignItems: 'center' }}>
 
                 {/* Code quiz card */}
+
                 <Card style={{ width: 300, margin: 10 }}>
+                    <div className="cardTitle" style={{ alignItems: 'right' }}>Code Quiz</div>
                     <div>
                         <Image className='portfolioImage' width={200} height={200} src={codeQuiz} />
                         <div style={{ display: 'flex', alignItems: 'center' }}>
@@ -37,6 +39,7 @@ function Portfolio() {
 
                 {/* Work Day Scheduler */}
                 <Card style={{ width: 300, margin: 10 }}>
+                    <div className="cardTitle" style={{ alignItems: 'right' }}>Work Day Scheduler</div>
                     <div>
                         <Image className='portfolioImage' width={200} height={200} src={workDayScheduler} />
                         <div style={{ display: 'flex', alignItems: 'center' }}>
@@ -48,6 +51,7 @@ function Portfolio() {
 
                 {/* Weather Forecast */}
                 <Card style={{ width: 300, margin: 10 }}>
+                    <div className="cardTitle" style={{ alignItems: 'right' }}>Weather Forecast</div>
                     <div>
                         <Image className='portfolioImage' width={200} height={200} src={weatherForecast} />
                         <div style={{ display: 'flex', alignItems: 'center' }}>
@@ -59,6 +63,7 @@ function Portfolio() {
 
                 {/* Local Finds */}
                 <Card style={{ width: 300, margin: 10 }}>
+                    <div className="cardTitle" style={{ alignItems: 'right' }}>Local Finds</div>
                     <div>
                         <Image className='portfolioImage' width={200} height={200} src={localFinds} />
                         <div style={{ display: 'flex', alignItems: 'center' }}>
@@ -70,6 +75,7 @@ function Portfolio() {
 
                 {/* Employee Tracker */}
                 <Card style={{ width: 300, margin: 10 }}>
+                    <div className="cardTitle" style={{ alignItems: 'right' }}>Employee Tracker</div>
                     <div>
                         <Image className='portfolioImage' width={200} height={200} src={employeeTracker} />
                         <div style={{ display: 'flex', alignItems: 'center' }}>
@@ -81,6 +87,7 @@ function Portfolio() {
 
                 {/* Florida Springs */}
                 <Card style={{ width: 300, margin: 10 }}>
+                    <div className="cardTitle" style={{ alignItems: 'right' }}>Florida Springs</div>
                     <div>
                         <Image className='portfolioImage' width={200} height={200} src={floridaSprings} />
                         <div style={{ display: 'flex', alignItems: 'center' }}>
