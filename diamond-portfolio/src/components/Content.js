@@ -12,7 +12,7 @@ function Content() {
         <>
             <div style={{ backgroundColor: '#F6FAFF' }}>
                 <Routes>
-                    <Route path='/homepage' element={<AboutMe />} />
+                    <Route path='/' element={<AboutMe />} />
                     <Route path='/portfolio' element={<Portfolio />} />
                     <Route path='/contact' element={<Contact />} />
                     <Route path='/resume' element={<Resume />} />
