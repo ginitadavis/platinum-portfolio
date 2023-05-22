@@ -42,12 +42,16 @@ function NavBar() {
     };
 
     return (
-        <div className='navbar-container' style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <div className='navbar-container' style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative' }}>
+            <video autoPlay muted loop className="myVideo" style={{ position: 'absolute', width: '100%', height: '100%', objectFit: 'cover' }}>
+                <source src={process.env.PUBLIC_URL + '/background-video2.mp4'} type="video/mp4" />
+            </video>
             <div style={{ textAlign: 'left', marginRight: '10px' }}>
-                <p className='myName' style={{ display: 'flex', marginLeft: '10px', alignItems: 'center', justifyContent: 'center' }}>Gina Davis</p>
+                <p className='myName' style={{ display: 'flex', marginLeft: '10px', alignItems: 'center', justifyContent: 'center', position: 'relative', zIndex: 2, color: '#fff' }}>Gina Davis</p>
+
             </div>
 
-            <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} style={{ backgroundColor: '#D7C9FF' }} />
+            <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} style={{ color: 'white', backgroundColor: 'rgba(0, 0, 0, 0.5)' }} />
         </div>
     );
 }

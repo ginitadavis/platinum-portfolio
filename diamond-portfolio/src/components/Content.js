@@ -6,9 +6,7 @@ import Portfolio from './Portfolio';
 import Contact from './Contact';
 import Resume from './Resume';
 
-function Content({ selection }) {
-    console.log('This is inside of Content')
-    console.log(selection)
+function Content() {
 
     return (
         <>
@@ -21,7 +19,6 @@ function Content({ selection }) {
                 </Routes>
 
             </div>
-            {/* <footer>This is the footer</footer> */}
         </>
     );
 }

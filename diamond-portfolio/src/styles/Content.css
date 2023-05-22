@@ -57,8 +57,9 @@ div,
 }
 
 .navbar-container {
-    background: #D7C9FF;
+    /* background: #D7C9FF !important; */
 }
+
 
 .resumeInformation {
     font-family: 'Ysabeau', sans-serif;
@@ -74,8 +75,10 @@ div,
 }
 
 footer {
-    background: #D7C9FF;
+    background: rgba(0, 82, 41, 0.6);
+    /*#005229*/
     /* margin-top: auto; */
+
 }
 
 @media (max-width: 1000px) {

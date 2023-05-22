@@ -22,7 +22,7 @@ The Portfolio shows a navigation bar with four sections: About Me, Portfolio, Co
 
 ![alt text](/diamond-portfolio/src/images/readme.png)
 
-Link to the deployed application:
+Link to the deployed application: [Deployed application](https://ginitadavis.github.io/Diamond-Portfolio/)
 
 
 
