@@ -17,7 +17,6 @@ function Content() {
                     <Route path='/contact' element={<Contact />} />
                     <Route path='/resume' element={<Resume />} />
                 </Routes>
-
             </div>
         </>
     );

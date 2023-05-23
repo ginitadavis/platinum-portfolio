@@ -9,7 +9,7 @@ function App() {
 
   return (
 
-    <Router>
+    <Router basename="/platinum-portfolio">
       <div className="App">
         <div className="headerAndContent">
           <HeaderMenu />

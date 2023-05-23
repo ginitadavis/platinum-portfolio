@@ -19,7 +19,7 @@ I created a new portfolio using the one of the latest technologies, REACT. I als
 
 The Portfolio shows a navigation bar with four sections: About Me, Portfolio, Contact, and Resume. When the user clicks the About Me section, my photo and description will show. The Portfolio shows six cards with pictures and links to my github and deployed applications, the Contact section shows a form where employers and collaborators can contact me, and the Resume section provides a downloadable pdf resume and a list of my skills. The footer section of the website has links to my LinkenIn, Github, and Stackoverflow profiles. 
 
-![alt text](/src/images/readme.png)
+![alt text](src/images/readme.png)
 
 Link to the deployed application: [Deployed application](https://ginitadavis.github.io/platinum-portfolio/)
 
