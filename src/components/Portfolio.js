@@ -10,6 +10,7 @@ import socialNetwork from '../images/social-network-api.png';
 import teamGenerator from '../images/team-generator.png';
 import weatherForecast from '../images/weather-forecast.png';
 import workDayScheduler from '../images/work-day-scheduler.png';
+import curiousChronicles from '../images/curious-chronicles.png'
 import imagePlaceholder from '../images/image-placeholder.png';
 import { RocketOutlined, GithubOutlined, } from '@ant-design/icons';
 import { Card } from 'antd';
@@ -96,6 +97,20 @@ function Portfolio() {
                         </div>
                     </div>
                 </Card>
+
+                {/* Curious Chronicles */}
+                <Card style={{ width: 300, margin: 10 }}>
+                    <div className="cardTitle" style={{ alignItems: 'right' }}>Curious Chronicles</div>
+                    <div>
+                        <Image className='portfolioImage' width={200} height={200} src={curiousChronicles} />
+                        <div style={{ display: 'flex', alignItems: 'center' }}>
+                            <a href="https://project3-test.herokuapp.com/" target='_blank'> <RocketOutlined style={{ marginRight: 8 }} /> Deployment </a>
+                            <a href="https://github.com/Qaizen/curious-chronicles" target='_blank'> <GithubOutlined style={{ marginRight: 8, marginLeft: 8 }} /> GitHub </a>
+                        </div>
+                    </div>
+                </Card>
+
+                {/* https://project3-test.herokuapp.com/ */}
 
                 {/* Team Generator */}
                 {/* <a href='https://github.com/ginitadavis/Team-Profile-Generator' target='_blank' rel='noopener noreferrer'>

@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/platinum-portfolio/static/css/main.1ab73431.css",
+    "main.js": "/platinum-portfolio/static/js/main.ada1ff9d.js",
+    "static/js/787.573b7a0a.chunk.js": "/platinum-portfolio/static/js/787.573b7a0a.chunk.js",
+    "static/media/Project1-local-finds.png": "/platinum-portfolio/static/media/Project1-local-finds.1da0756c1a9bee9a506c.png",
+    "static/media/about_me.JPG": "/platinum-portfolio/static/media/about_me.5bd0991100b24024303e.JPG",
+    "static/media/weather-forecast.png": "/platinum-portfolio/static/media/weather-forecast.fcdbf7dba806238bbb2c.png",
+    "static/media/Project2-Florida-Springs.jpg": "/platinum-portfolio/static/media/Project2-Florida-Springs.1c42f2ec86d22b3157ea.jpg",
+    "static/media/employee-tracker.png": "/platinum-portfolio/static/media/employee-tracker.7bb69df8028d65a6457a.png",
+    "static/media/e-commerce-back-end.png": "/platinum-portfolio/static/media/e-commerce-back-end.76fcd69fdcb616082d17.png",
+    "static/media/work-day-scheduler.png": "/platinum-portfolio/static/media/work-day-scheduler.aca6cafd949e089ae809.png",
+    "static/media/team-generator.png": "/platinum-portfolio/static/media/team-generator.dda5e2dacc12f5f4c04c.png",
+    "static/media/code-quiz.png": "/platinum-portfolio/static/media/code-quiz.e6a7cc6cb9e8e7db08eb.png",
+    "static/media/social-network-api.png": "/platinum-portfolio/static/media/social-network-api.801e9ad212d7dbbcd503.png",
+    "index.html": "/platinum-portfolio/index.html",
+    "main.1ab73431.css.map": "/platinum-portfolio/static/css/main.1ab73431.css.map",
+    "main.ada1ff9d.js.map": "/platinum-portfolio/static/js/main.ada1ff9d.js.map",
+    "787.573b7a0a.chunk.js.map": "/platinum-portfolio/static/js/787.573b7a0a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1ab73431.css",
+    "static/js/main.ada1ff9d.js"
+  ]
+}
